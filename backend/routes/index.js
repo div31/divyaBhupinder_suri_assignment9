@@ -25,11 +25,11 @@ router.post("/Login",(req,res)=>{
                 if (isMatch) {
                res.send({message:"login sucess",user:user})
                 } else{
-                    res.send({message:"wrong credentials"})
+                    res.send({message:"You have entered wrong credentials, please check again."})
                 }
             })
         }else{
-            res.send({message: "not register"})
+            res.send({message: "Please register"})
         }
     })
 });
